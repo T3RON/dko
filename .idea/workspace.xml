@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="debd6e81-e558-43c7-b364-39253d9ae006" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1UOClqmtlkbb4cisFIMHUuV0gVV" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views/admin/cities" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\diako\application\views\site" />
+      <recent name="D:\wamp\www\diako\application\controllers" />
+      <recent name="D:\wamp\www\diako\application\models" />
+      <recent name="D:\wamp\www\diako\application\migrations" />
+      <recent name="D:\wamp\www\diako\application\libraries" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\diako\application\views\site" />
+      <recent name="D:\wamp\www\diako\application\controllers\site" />
+      <recent name="D:\wamp\www\diako\application\models" />
+      <recent name="D:\wamp\www\diako\assets\css" />
+      <recent name="D:\wamp\www\diako\application\views\site\hostels" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="debd6e81-e558-43c7-b364-39253d9ae006" name="Default Changelist" comment="" />
+      <created>1574840375849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574840375849</updated>
+      <workItem from="1574840384850" duration="8457000" />
+      <workItem from="1574918331207" duration="9600000" />
+      <workItem from="1575093473541" duration="15849000" />
+      <workItem from="1575195538118" duration="690000" />
+      <workItem from="1575197712122" duration="3443000" />
+      <workItem from="1575218416285" duration="2555000" />
+      <workItem from="1575266524642" duration="146000" />
+      <workItem from="1575358045064" duration="2921000" />
+      <workItem from="1575437611546" duration="1359000" />
+      <workItem from="1575445760402" duration="2885000" />
+      <workItem from="1575455792554" duration="26000" />
+      <workItem from="1575475960624" duration="821000" />
+      <workItem from="1575612535687" duration="3066000" />
+      <workItem from="1575646421280" duration="3464000" />
+      <workItem from="1575707260470" duration="4125000" />
+      <workItem from="1575782087129" duration="6643000" />
+      <workItem from="1575869308260" duration="2412000" />
+      <workItem from="1575876059503" duration="2276000" />
+      <workItem from="1575879398402" duration="5678000" />
+      <workItem from="1575964472620" duration="4649000" />
+      <workItem from="1576047315664" duration="3867000" />
+      <workItem from="1576136353060" duration="2040000" />
+      <workItem from="1576301599760" duration="8589000" />
+      <workItem from="1576393056919" duration="2373000" />
+      <workItem from="1576560986533" duration="13449000" />
+      <workItem from="1576647493875" duration="11195000" />
+      <workItem from="1576740331106" duration="4369000" />
+      <workItem from="1576755067717" duration="110000" />
+      <workItem from="1576902379250" duration="3937000" />
+      <workItem from="1576993403267" duration="8727000" />
+      <workItem from="1577078022670" duration="3472000" />
+      <workItem from="1577165546902" duration="7954000" />
+      <workItem from="1577183485752" duration="1717000" />
+      <workItem from="1577426426820" duration="5165000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

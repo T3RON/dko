@@ -1,0 +1,37 @@
+.header-simcard h1{
+    margin: 2rem 0rem;
+}
+.sim-card-registration{
+    width: 95%;
+    padding: 2rem 0;
+    background: #eee;
+    margin: 1rem auto;
+}
+input#irancellcompany,input#mcicompany,input#rightelcompany{
+    width: 4%;
+    margin-right: 1.5rem;
+}
+.account-header-menu{
+    margin: 1rem 0;
+}
+#irancell ul li a , #ir-mci ul li a , #rightel ul li a{
+    color: #be0f53;
+}
+.img-setting{
+    width: 100%;
+}
+.img-setting img{
+    width: 100%;
+}
+.tab-content{
+    background: #eee;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.useful-codes{
+    margin: 1.5rem 1rem;
+}
+.useful-codes span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}

@@ -1,0 +1,160 @@
+
+@font-face {
+    font-family: Vazir;
+    src: url('../../themes/tablestrap/fonts/Vazir-FD-WOL.eot');
+    src: url('../../themes/tablestrap/fonts/Vazir-FD-WOL.eot?#iefix') format('embedded-opentype'), url('../../themes/tablestrap/fonts/Vazir-FD-WOL.woff') format('woff'), url('../../themes/tablestrap/fonts/Vazir-FD-WOL.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../../themes/tablestrap/fonts/Vazir-Bold-FD-WOL.eot');
+    src: url('../../themes/tablestrap/fonts/Vazir-Bold-FD-WOL.eot?#iefix') format('embedded-opentype'), url('../../themes/tablestrap/fonts/Vazir-Bold-FD-WOL.woff') format('woff'), url('../../themes/tablestrap/fonts/Vazir-Bold-FD-WOL.ttf') format('truetype');
+    font-weight: bold;
+}
+/* Multiselect
+----------------------------------*/
+.ui-multiselect {
+    border: solid 1px #ebebeb;
+    font-size: 0.8em;
+    font-family: 'Vazir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+.ui-multiselect ul {
+    -moz-user-select: none;
+}
+
+.ui-multiselect li {
+    margin: 0;
+    padding: 5px;
+    cursor: default;
+    line-height: 20px;
+    font-size: 11px;
+    list-style: none;
+}
+
+.ui-multiselect li a {
+    color: #f3e9f3;
+    text-decoration: none;
+    padding: 0;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+
+.ui-multiselect li.ui-draggable-dragging {
+    padding-left: 10px;
+}
+
+.ui-multiselect div.selected {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    float: left;
+}
+
+.ui-multiselect ul.selected {
+    position: relative;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    background: #fff;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    position: relative;
+    width: 100%;
+}
+
+.ui-multiselect ul.selected li {}
+
+.ui-multiselect div.available {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    float: left;
+    border-left: 1px solid #ebebeb;
+}
+
+.ui-multiselect ul.available {
+    position: relative;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    background: #fff;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    width: 100%;
+}
+
+.ui-multiselect ul.available li {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.ui-multiselect .ui-state-default {
+    border: none;
+    margin-bottom: 1px;
+    position: relative;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.ui-multiselect .ui-state-hover {
+    border: none;
+}
+
+.ui-multiselect .ui-widget-header {
+    border: none;
+    font-size: 11px;
+    margin-bottom: 1px;
+}
+
+.ui-multiselect .add-all {
+    float: right;
+    padding: 10px 7px 10px 0;
+    font-size: 11px;
+}
+
+.ui-multiselect .remove-all {
+    float: right;
+    padding: 10px 7px 11px 0;
+    font-size: 11px;
+}
+
+.ui-multiselect .search {
+    float: left;
+    padding: 0;
+}
+
+.ui-multiselect .count {
+    float: left;
+    padding: 10px 7px;
+}
+
+.ui-multiselect li span.ui-icon-arrowthick-2-n-s {
+    position: absolute;
+    left: 2px;
+}
+
+.ui-multiselect li a.action {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.ui-multiselect input.search {
+    height: 20px !important;
+    padding: 2px !important;
+    opacity: 0.5 !important;
+    margin: 8px !important;
+    width: 150px !important;
+}
+
+select.multiselect {
+    width: 704px;
+}

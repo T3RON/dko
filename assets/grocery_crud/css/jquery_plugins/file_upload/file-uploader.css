@@ -1,0 +1,12 @@
+.qq-upload-button {
+	display: block;
+	padding: 7px 15px;
+	text-align: center;
+	border: 1px solid #e1e1e1;
+	color: #555555;
+	border-radius: 5px;
+	float: left;
+
+}
+
+.qq-upload-button:focus {outline:1px dotted black;}

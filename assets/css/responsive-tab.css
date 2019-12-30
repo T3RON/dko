@@ -1,0 +1,68 @@
+/**
+ * Tabs
+ */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background:linear-gradient(to right, #300818 0%, #AF104D 51%, #300818 100%);
+    color:#fff;
+    letter-spacing:0px;
+    font-size:14px;
+    line-height:25px;
+    outline:none !important;
+    text-align:center;
+    background-size:200% auto;
+    font-weight: bold;
+    transition: background ease 0.2s;
+}
+.tabs label:hover{
+    background-position:right center;
+    color:#fff
+}
+.tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #eee;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+    background: #eee;
+    color: black;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+@media (max-width: 45em) {
+    .tabs .tab,
+    .tabs label {
+        order: initial;
+    }
+
+    .tabs label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0.2rem;
+    }
+}
+/**
+ * Generic Styling
+*/
+

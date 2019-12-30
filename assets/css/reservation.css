@@ -1,0 +1,270 @@
+body{
+    background: white;
+}
+nav.navbar{
+    height: 4rem;
+}
+.header_area .navbar-brand img {
+    max-width: 125px;
+    max-height: 62px;
+}
+.row{
+    margin: 4rem 1rem !important;
+    background: #eee;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.slider-picture img{
+    width: 100%;
+    height: 27.5rem;
+}
+.content .title{
+    padding-top: 8rem;
+}
+.content .title h1{
+    text-align: center;
+    color: black;
+    padding-bottom: 2rem;
+}
+.content .policies p.header{
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+}
+.content .policies .box{
+    transition: all 0.7s;
+}
+.content .policies .box:hover{
+    background: white;
+    border-radius: 1rem;
+    transition: all 0.7s;
+}
+.ws_images img{
+    width: 960px;
+    height: 450px;
+}
+.map-direction .row{
+    margin: 0!important;
+}
+.title-rates{
+    margin: 2rem 0 0.5rem;
+}
+.title-rates .rating-summary{
+    display: flex;
+    justify-content: flex-start;
+}
+.title-rates .rating-summary .score{
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background: #890D3D;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.title-rates .rating-summary .rate-information{
+    margin: 0 0.5rem;
+}
+.title-rates .rating-summary .rate-information p.quality{
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #890D3D;
+}
+.title-rates .rating-summary .rate-information a.counter{
+    text-decoration: none;
+    color: #890D3D;
+    font-weight: bold;
+    transition: color 0.8s;
+}
+.title-rates .rating-summary .rate-information a.counter:hover{
+    color: #0b0b0b;
+    transition: color 0.8s;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+.progress-boxs .row , .latest-reviews .row{
+    margin: 0!important;
+    padding: 1rem 0!important;
+}
+.progress-boxs p{
+    margin: 0;
+    color: black;
+}
+.progress-box{
+    border: 1px solid!important;
+    border-radius: 6px!important;
+}
+.progress{
+    display: flex;
+    height: .55rem!important;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: white!important;
+    border-radius: .25rem;
+}
+.progress-bar{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background: linear-gradient(to right, #300818 0%, #AF104D 100%)!important;
+    transition: width .6s ease;
+}
+.latest-reviews{
+    padding: 1.5rem 0;
+}
+.review-content{
+    border-bottom: 1px dotted;
+    padding-bottom: 1rem;
+}
+.review-content .rating-summary{
+    display: flex;
+    align-items: center;
+}
+.review-content .rating-summary .score{
+    width: 2.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    background: #890D3D;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+}
+.review-content .rating-summary .information{
+    margin: 0;
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #890D3D;
+}
+.review-content .rating-summary .information .quality{
+    margin: 0;
+}
+.review-content .rating-summary .date{
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.review-content .rating-summary .date i{
+    padding: 4px 4px 0px;
+}
+.review-content .review-container{
+    height: 9rem;
+    width: 94%;
+}
+.review-content .review-container .review-note{
+    width: 100%;
+}
+.review-content .review-note p{
+    text-align: justify;
+}
+.latest-reviews span.details{
+    padding: 4px 0;
+    font-size: 10px;
+}
+.latest-reviews .btn-read-review{
+    height: 3rem;
+    width: 12rem;
+    margin-top: 1.5rem;
+}
+.read-all-review button{
+    transition: all 0.8s;
+}
+/*****modal sign in******/
+.modalsignin .row{
+    padding: 1rem!important;
+    margin: 0!important;
+    background: white;
+}
+.modalsignin a{
+    transition: color 0.7s;
+    color: #890D3D;
+}
+.modalsignin a:hover{
+    transition: color 0.7s;
+    color: #1b1e21;
+}
+.modalsignin .btn{
+    transition: all 0.7s;
+}
+.modalsignin .btn:hover{
+    transition: all 0.7s;
+}
+.modalsignin input{
+    outline: none;
+    border: none;
+    box-shadow: 0 14px 28px #890D3D, 0 10px 10px #890D3D;
+}
+/*****modal sign in******/
+.modal-dialog-slideout {position:relative;z-index:10000;min-height: 100%; margin: 0 0 0 auto;background: #fff;}
+.modal.fade .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(100%,0)scale(1);transform: translate(100%,0)scale(1);}
+.modal.fade.show .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(0,0);transform: translate(0,0);display: flex;align-items: stretch;-webkit-box-align: stretch;height: 100%;}
+.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body{overflow-y: auto;overflow-x: hidden;}
+.modal-dialog-slideout .modal-content{border: 0;}
+.modal-dialog-slideout .modal-header, .modal-dialog-slideout .modal-footer {height: 69px; display: block;}
+.modal-dialog-slideout .modal-header h5 {float:left;}
+.modal-dialog-slideout .property-review{
+    display: flex;
+}
+.modal-dialog-slideout .property-review .guess{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid;
+    overflow: hidden;
+}
+.modal-dialog-slideout .property-review .guess i{
+    font-size: 2.5rem;
+    position: relative;
+    top: 0.5rem;
+    left: 0.35rem;
+}
+.modal input{
+    box-shadow: 0 14px 28px #890D3D, 0 10px 10px #890D3D;
+}
+.info-hostel{
+    margin: 1rem 0!important;
+}
+.facilities-group .facilities-group-header{
+    margin-bottom: 0.5rem;
+    border-bottom: 2px dotted #ccc;
+}
+.facilities .facilities-group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+.facilities-group .facilities-group-header i{
+    margin-left: 0.5rem;
+    font-size: 18px;
+    color: #890D3D;
+}
+.facilities .facilities-group .facilities-group-item{
+    margin-bottom: 0.5rem;
+}
+.footer{
+    background: transparent;
+    margin: 0!important;
+}
+/****************/
+@media (min-width: 992px){
+    .gallery #carouselExampleIndicators{
+        margin: 0 5rem;
+    }
+}
