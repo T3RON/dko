@@ -73,22 +73,15 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="form-group row">
-                                            <label class="control-label text-right col-md-3">Location Sat</label>
+                                            <label class="control-label text-right col-md-3">Location Mao Url</label>
                                             <div class="col-md-9">
-                                                <input name="attraction_sat" type="text" class="form-control" value="<?= $attraction_value->attraction_sat; ?>">
+                                                <input name="attraction_map_url" type="text" class="form-control" value="<?= $attraction_value->attraction_map_url; ?>">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="control-label text-right col-md-3">Location Lat</label>
-                                            <div class="col-md-9">
-                                                <input name="attraction_lat" type="text" class="form-control" value="<?= $attraction_value->attraction_lat; ?>">
-                                            </div>
-                                        </div>
-                                    </div>
+                            
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">

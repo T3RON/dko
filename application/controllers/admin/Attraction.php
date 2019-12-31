@@ -50,8 +50,7 @@ class Attraction extends MY_Controller {
             'attraction_title' => $this->input->post('attraction_title'),
             'attraction_text' => $this->input->post('attraction_text'),
             'attraction_image' =>  $this->Attraction_model->upload('attraction_image','jpg|png',5024),
-            'attraction_sat' => $this->input->post('attraction_sat'),
-            'attraction_lat' => $this->input->post('attraction_lat'),
+            'attraction_map_url' => $this->input->post('attraction_map_url'),
             'attraction_general_information' => $this->input->post('attraction_general_information'),
             'attraction_how_to_get_there' => $this->input->post('attraction_how_to_get_there')
         );
@@ -80,8 +79,7 @@ class Attraction extends MY_Controller {
             'attraction_title' => $this->input->post('attraction_title'),
             'attraction_text' => $this->input->post('attraction_text'),
             'attraction_image' =>  $this->Attraction_model->upload('attraction_image','jpg|png',5024),
-            'attraction_sat' => $this->input->post('attraction_sat'),
-            'attraction_lat' => $this->input->post('attraction_lat'),
+            'attraction_map_url' => $this->input->post('attraction_map_url'),
             'attraction_general_information' => $this->input->post('attraction_general_information'),
             'attraction_how_to_get_there' => $this->input->post('attraction_how_to_get_there')
         );

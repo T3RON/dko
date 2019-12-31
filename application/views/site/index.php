@@ -195,7 +195,7 @@
 			</div>
 			<div class="flex-slide home">
 				<div class="flex-title flex-title-home">Sim Card</div>
-				<div class="flex-about flex-about-home"><p><a class="text-white" href="simcard.html"> Click here to buy Sim Card( Irancell(MTN) / IR-MCI / RighTel )</a></p></div>
+				<div class="flex-about flex-about-home"><p><a class="text-white" href="<?= site_url('site/Simcard') ?>"> Click here to buy Sim Card( Irancell(MTN) / IR-MCI / RighTel )</a></p></div>
 			</div>
 			<div class="flex-slide about">
 				<div class="flex-title">Ticket</div>
@@ -216,7 +216,7 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <!--------------tour------------>
 
-	<section data-scroll-index="4" class="tour">
+	<!-- <section data-scroll-index="4" class="tour">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
@@ -313,7 +313,7 @@
                 </div>
             </div>
 		</div>
-	</section>
+	</section> -->
 <!--------------tour------------>
 
 <?php include_once (APPPATH.'views/_layout/site/foot.php'); ?>

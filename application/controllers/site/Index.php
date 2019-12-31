@@ -11,6 +11,7 @@ class Index extends CI_Controller
     }
 
     function index () {
+        $data['gallery'] = $this->Cities_model->select('gallery');
         $data['cities'] = $this->Cities_model->select('cities');
         $this->load->view('site/index',$data);
     }
