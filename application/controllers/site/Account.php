@@ -38,7 +38,9 @@ class Account extends CI_Controller {
     function login() {
         $person_email = $this->input->post('person_email');
         $person_password = $this->input->post('person_password');
+    
         $result = $this->Account_model->check_login($person_email,$person_password);
+    
         if ($result == true) {
 
             redirect('site/Account');
@@ -78,7 +80,7 @@ class Account extends CI_Controller {
         $data = array(
             'person_username' => $this->input->post('person_username'),
             'person_email' =>$this->input->post('person_email'),
-            'person_password' => $this->input->post('person_password'),
+            'person_password' =>  password_hash($this->input->post('person_password'), PASSWORD_BCRYPT),
             'person_fn' =>  $this->input->post('person_fn'),
             'person_ln' => $this->input->post('person_ln'),
             'person_birthday' => $this->input->post('person_birthday'),

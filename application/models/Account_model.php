@@ -12,11 +12,11 @@ class Account_model extends MY_Model  {
 
     function check_login ($email,$password) {
         $this->db->where('person_email',$email);
-        $this->db->where('person_password',$password);
         $this->db->limit(1);
         $login_query = $this->db->get('person');
         if ($login_query->num_rows() > 0) {
             $row = $login_query->row();
+         
             if ($row) {
                 $session_data = array(
                     'person_id'=> $row->person_id,
@@ -28,7 +28,7 @@ class Account_model extends MY_Model  {
 
                 $this->session->sess_expiration = '14400';
                 $this->session->set_userdata($session_data);
-                return true;
+                return password_verify($password,$row->person_password);
 
             }
 
