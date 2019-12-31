@@ -178,6 +178,11 @@ class MY_Model extends CI_Model {
         return $cnt['count(*)'];
     }
 
-    
+    function g_count($table) {
+        $this->db->select('count(*)');
+        $query = $this->db->get($table);
+        $cnt = $query->row_array();
+        return $cnt['count(*)'];
+    }
   
 }

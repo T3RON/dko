@@ -1766,6 +1766,7 @@ File: scss
     .topbar .top-navbar .dropdown-toggle::after {
       display: none; }
     .topbar .top-navbar .navbar-header {
+      display:none;
       line-height: 45px;
       text-align: center; }
       .topbar .top-navbar .navbar-header .navbar-brand {
