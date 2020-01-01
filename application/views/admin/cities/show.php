@@ -24,8 +24,7 @@
                                 <div class="col-md-12">
                                     <div style="direction: ltr;text-align: left;" class="col-md-12 pull-left">
                                         <p>Information : <span class="text-info"><?= $cities_value->cities_information; ?></span></p>
-                                        <p>Lat : <span class="text-info"><?= $cities_value->cities_lat; ?></span></p>
-                                        <p>Sat : <span class="text-info"><?= $cities_value->cities_sat; ?></span></p>
+                                        <p>Map url : <span class="text-info"><?= $cities_value->cities_map_url; ?></span></p>
                                         <p>Tour Title : <span class="text-info"><?= $cities_value->cities_tour_title; ?></span></p>
                                         <p>Tour Content : <span class="text-info"><?= $cities_value->cities_tour_content; ?></span></p>
                                         <p>City Image : <span class="text-info"><?= $cities_value->cities_image; ?></span></p>

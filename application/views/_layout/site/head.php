@@ -38,6 +38,21 @@
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav">
                         <li class="nav-item active"><a data-scroll-nav="0" class="nav-link" href="<?=base_url('site/Index')?>">Home</a></li>
+                        <li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								   aria-expanded="false">Iran Guide</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="art-culture.html">Art and Culture</a></li>
+									<li class="nav-item"><a class="nav-link" href="clothing-guide.html">Clothing Guide</a></li>
+									<li class="nav-item"><a class="nav-link" href="persian-calendar.html">Persian Calendar</a></li>
+									<li class="nav-item"><a class="nav-link" href="public-holidays.html">Public Holidays</a></li>
+									<li class="nav-item"><a class="nav-link" href="iran-visa.html">Iran Visa</a></li>
+									<li class="nav-item"><a class="nav-link" href="transport.html">Transport</a></li>
+									<li class="nav-item"><a class="nav-link" href="exchange-currency.html">Exchange & Currency</a></li>
+									<li class="nav-item"><a class="nav-link" style="font-size: 0.85rem" href="reasons-visit.html">10 Reasons why you should visit</a></li>
+									<li class="nav-item"><a class="nav-link" href="four-seasons.html">Iran; The land of 4 seasons</a></li>
+								</ul>
+							</li>
                         <li class="nav-item"><a data-scroll-nav="1" class="nav-link" href="<?=base_url('site/Index')?>">Cities</a></li>
                         <li class="nav-item submenu dropdown">
                             <a data-scroll-nav="3" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"

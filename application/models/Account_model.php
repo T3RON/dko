@@ -28,6 +28,7 @@ class Account_model extends MY_Model  {
 
                 $this->session->sess_expiration = '14400';
                 $this->session->set_userdata($session_data);
+        
                 return password_verify($password,$row->person_password);
 
             }

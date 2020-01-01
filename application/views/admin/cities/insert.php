@@ -40,22 +40,15 @@
 
                                         <!--/row-->
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <div class="form-group row">
-                                                    <label class="control-label text-right col-md-4">Latitude</label>
-                                                    <div class="col-md-8">
-                                                        <input name="cities_lat" type="text" class="form-control">
+                                                    <label class="control-label text-right col-md-2">Map Url</label>
+                                                    <div class="col-md-10">
+                                                        <input name="cities_map_url" type="text" class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group row">
-                                                    <label class="control-label text-right col-md-4">Longitude</label>
-                                                    <div class="col-md-8">
-                                                        <input name="cities_sat" type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">

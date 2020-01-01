@@ -62,6 +62,9 @@ class Hostels extends CI_Controller {
 
 
     function insert () {
+        if ($this->session->userdata('logged_in')) { 
+
+      
         $data = array(
             'person_id' => $this->session->userdata('person_id'),
             'hostels_id' => $this->input->post('hostels_id'),
@@ -103,9 +106,10 @@ class Hostels extends CI_Controller {
     
 
         $this->load->library('email');
+        $ssl = ($this->smtp_crypto === 'ssl') ? 'ssl://' : '';
         $config = array();
         $config['protocol'] = 'smtp';
-        $config['smtp_host'] = 'smtp.googlemail.com';
+        $config['smtp_host'] = $ssl.'smtp.googlemail.com';
         $config['smtp_user'] = 'seif4847';
         $config['smtp_pass'] = 'Ms3950171533'; 
         $config['smtp_port'] = 465;
@@ -126,7 +130,9 @@ class Hostels extends CI_Controller {
        }
      
        
-
+        }else {
+            redirect('site/Account');
+        }
     }
 
      function email()

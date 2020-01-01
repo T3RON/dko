@@ -73,7 +73,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group row">
-                                                    <label class="control-label text-right col-md-3">Location Map Url</label>
+                                                    <label class="control-label text-right col-md-3">Map Url</label>
                                                     <div class="col-md-9">
                                                         <input name="attraction_map_url" type="text" class="form-control">
                                                     </div>

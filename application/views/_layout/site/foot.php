@@ -256,6 +256,33 @@ $(document).ready(function() {
         document.getElementById("facilities-input").setAttribute('value',this.value);
     }
 </script>
+<script type="text/javascript">
+        $(document).ready(function(){
+ 
+            $('#cities_id').change(function(){ 
+                var id=$(this).val();
+                $.ajax({
+                    url : "<?php echo site_url('site/Index/get_hostels');?>",
+                    method : "POST",
+                    data : {id: id},
+                    async : true,
+                    dataType : 'json',
+                    success: function(data){
+                         
+                        var html = '';
+                        var i;
+                        for(i=0; i<data.length; i++){
+                            html += '<option value='+data[i].hostels_id+'>'+data[i].hostels_title+'</option>';
+                        }
+                        $('#hostels_id').html(html);
+ 
+                    }
+                });
+                return false;
+            }); 
+             
+        });
+    </script>
 </body>
 
 </html>

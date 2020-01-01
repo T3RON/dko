@@ -41,7 +41,7 @@ class Account extends CI_Controller {
     
         $result = $this->Account_model->check_login($person_email,$person_password);
     
-        if ($result == true) {
+        if ($result != true) {
 
             redirect('site/Account');
         } else {

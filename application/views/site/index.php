@@ -216,7 +216,7 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <!--------------tour------------>
 
-	<!-- <section data-scroll-index="4" class="tour">
+	<section data-scroll-index="4" class="tour">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
@@ -227,6 +227,8 @@
 			</div>
 		</div>
 		<div class="container-fluid tour-content">
+		<form action="<?= site_url('site/Hostels/insert') ?>" method="post" class="form-horizontal">
+        
 			<div class="row">
 				<div class="col-12">
 					<div class="tour-header">
@@ -236,74 +238,47 @@
 				</div>
                 <div class="col-12 col-md-6 col-xl-4 tour-input">
                     <label for="fullname" class="label-input100">Full Name *</label>
-                    <input id="fullname" type="text" name="fullname" class="input-height-width" required="required" aria-invalid="false" placeholder="Please enter your full name ...">
+                    <input id="fullname" type="text" name="book_first_name" class="input-height-width" required="required" aria-invalid="false" placeholder="Please enter your full name ...">
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 tour-input">
                     <label for="phonenumber" class="label-input100">Phone Number *</label>
-                    <input id="phonenumber" type="tel" name="phonenumber" class="input-height-width" required="required" aria-invalid="false" placeholder="Please enter your phone number ...">
+                    <input id="phonenumber" type="tel" name="book_cellphone_number" class="input-height-width" required="required" aria-invalid="false" placeholder="Please enter your phone number ...">
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 tour-input">
                     <label for="email" class="label-input100">Email *</label>
-                    <input id="email" type="email" name="email" class="input-height-width" required="required" aria-invalid="false" placeholder="Please enter your email ...">
+                    <input id="email" type="email" name="book_email" class="input-height-width" required="required" aria-invalid="false" placeholder="Please enter your email ...">
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 tour-input">
                     <label for="origin" class="label-input100">Origin *</label>
-                    <select class="input-height-width" id="origin" name="origin" required="required" aria-invalid="false">
-                        <option value="" selected="selected">Choose your origin for tour please ...</option>
-                        <option value="Tehran">Tehran</option>
-                        <option value="Gilan">Gilan</option>
-                        <option value="Mazandaran">Mazandaran</option>
-                        <option value="Golestan">Golestan</option>
-                        <option value="Tabriz">Tabriz</option>
-                        <option value="Qom">Qom</option>
-                        <option value="Mashhad">Mashhad</option>
-                        <option value="Qazvin">Qazvin</option>
-                        <option value="Kashan">Kashan</option>
-                        <option value="Isfahan">Isfahan</option>
-                        <option value="shiraz">shiraz</option>
-                        <option value="Yazd">Yazd</option>
-                        <option value="Kerman">Kerman</option>
-                        <option value="Hamadan">Hamadan</option>
-                        <option value="Kurdestan">Kurdestan</option>
-                        <option value="Hormozgan">Hormozgan</option>
+                    <select class="input-height-width" id="cities_id" name="cities_id" required="required" aria-invalid="false">
+						<option value="" selected="selected">Choose your origin for tour please ...</option>
+						<?php foreach ($origin as $origin_value) { ?>
+                        <option value="<?= $origin_value->cities_id; ?>"><?= $origin_value->cities_title; ?></option>
+                
+						<?php } ?>
                     </select>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 tour-input">
                     <label for="destination" class="label-input100">Destination *</label>
-                    <select class="input-height-width" id="destination" name="destination" required="required" aria-invalid="false">
-                        <option value="" selected="selected">Choose your destination for tour please ...</option>
-                        <option value="Tehran">Tehran</option>
-                        <option value="Gilan">Gilan</option>
-                        <option value="Mazandaran">Mazandaran</option>
-                        <option value="Golestan">Golestan</option>
-                        <option value="Tabriz">Tabriz</option>
-                        <option value="Qom">Qom</option>
-                        <option value="Mashhad">Mashhad</option>
-                        <option value="Qazvin">Qazvin</option>
-                        <option value="Kashan">Kashan</option>
-                        <option value="Isfahan">Isfahan</option>
-                        <option value="shiraz">shiraz</option>
-                        <option value="Yazd">Yazd</option>
-                        <option value="Kerman">Kerman</option>
-                        <option value="Hamadan">Hamadan</option>
-                        <option value="Kurdestan">Kurdestan</option>
-                        <option value="Hormozgan">Hormozgan</option>
+                    <select class="input-height-width" id="hostels_id" name="hostels_id" required="required" aria-invalid="false">
+                        <option selected="selected">Choose your destination for tour please ...</option>
+              
                     </select>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 tour-input">
                     <label for="numberofguests" class="label-input100" style="font-size: 14px">Number of Guests *</label>
-                    <input id="numberofguests" type="number" name="numberofguests" class="input-height-width" required="required" aria-invalid="false" placeholder="Please enter number of guests (People) ...">
+                    <input id="numberofguests" type="number" name="book_number_of_guests" class="input-height-width" required="required" aria-invalid="false" placeholder="Please enter number of guests (People) ...">
                 </div>
                 <div class="col-12 tour-input">
                     <label for="visittoplace">Which places and cities do you want to see in the selected destination province? Please write here (Optional).</label>
-                    <textarea cols="60" id="visittoplace" name="visittoplace" rows="4" style="width: 100%; max-width: 100%;"></textarea>
+                    <textarea cols="60" id="visittoplace" name="book_comment" rows="4" style="width: 100%; max-width: 100%;"></textarea>
                 </div>
                 <div class="col-12">
                     <p>Notice : Please fill in all input date . After booking we will contact with you and talk about the cost and time of departure .</p>
                 </div>
                 <div class="col-12">
                     <div class="tour-book">
-                        <a class="primary_btn gradient-bg btn-book" href="#">Book Now</a>
+                        <input id="book" type="submit" class="primary_btn gradient-bg btn-book" value="Book Now">
                     </div>
                 </div>
 			</div>
@@ -311,9 +286,10 @@
                 <div class="tour-footer">
                     <img src="<?=base_url('')?>assets/img/tour/tour-footer.png">
                 </div>
-            </div>
+			</div>
+				</form>
 		</div>
-	</section> -->
+	</section>
 <!--------------tour------------>
 
 <?php include_once (APPPATH.'views/_layout/site/foot.php'); ?>
