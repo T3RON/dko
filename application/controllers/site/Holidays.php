@@ -6,7 +6,7 @@
  * Time: 11:55 PM
  */
 
-class Maps extends CI_Controller {
+class Holidays extends CI_Controller {
 
 
     function __construct()
@@ -18,7 +18,7 @@ class Maps extends CI_Controller {
     function index()
     {
 
-        $this->load->view('site/maps');
+        $this->load->view('site/holidays');
 
     }
 

@@ -51,6 +51,9 @@
                 <li> <a class="waves-effect waves-dark" href="<?=base_url('admin/Books')?>" aria-expanded="false">
                         <i class="mdi mdi-bookmark-plus"></i><span class="hide-menu">Books</span></a>
                 </li>
+                <li> <a class="waves-effect waves-dark" href="<?=base_url('admin/Simcard')?>" aria-expanded="false">
+                        <i class="mdi mdi-bookmark-plus"></i><span class="hide-menu">Simcard</span></a>
+                </li>
                 <li> <a class="waves-effect waves-dark" href="<?=base_url('admin/Attraction')?>" aria-expanded="false">
                         <i class="mdi mdi-attachment"></i><span class="hide-menu">Attraction</span></a>
 

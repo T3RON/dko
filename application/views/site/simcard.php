@@ -15,7 +15,7 @@
             <section class="sim-card-registration">
                 <div class="container-fluid">
                     <div class="row">
-                        <form id="sim-card-registration-form" class="w-100" action="" method="post">
+                        <form id="sim-card-registration-form" class="w-100" action="<?= site_url('site/Simcard/insert') ?>" method="post">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12 pb-5">
@@ -25,28 +25,28 @@
                                     <div class="col-12 col-md-6 col-lg-4">
                                         <div class="wrap-input100 validate-input" data-validate="Name is required">
                                             <label for="firstname" class="label-input100">First Name</label>
-                                            <input id="firstname"  class="input100" type="text" name="firstname" required="required" placeholder="First Name...">
+                                            <input id="firstname"  class="input100" type="text" name="simcard_nf" required="required" placeholder="First Name...">
                                             <span class="focus-input100"></span>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4">
                                         <div class="wrap-input100 validate-input" data-validate="Name is required">
                                             <label for="lastname" class="label-input100">Last Name</label>
-                                            <input id="lastname"  class="input100" type="text" name="lastname" required="required" placeholder="Last Name...">
+                                            <input id="lastname"  class="input100" type="text" name="simcard_ln" required="required" placeholder="Last Name...">
                                             <span class="focus-input100"></span>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4">
                                         <div class="wrap-input100 validate-input" data-validate = "Valid phone number is required">
                                             <label for="phonenumber" class="label-input100">Phone Number</label>
-                                            <input id="phonenumber"  class="input100" type="tel" name="phonenumber" required="required" placeholder="Phone number...">
+                                            <input id="phonenumber"  class="input100" type="tel" name="simcard_number" required="required" placeholder="Phone number...">
                                             <span class="focus-input100"></span>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4">
                                         <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
                                             <label for="email" class="label-input100">Email</label>
-                                            <input id="email"  class="input100" type="email" name="email" required="required" placeholder="Email address...">
+                                            <input id="email"  class="input100" type="email" name="simcard_email" required="required" placeholder="Email address...">
                                             <span class="focus-input100"></span>
                                         </div>
                                     </div>
@@ -55,11 +55,11 @@
                                             <label class="label-input100 mb-4">Choose your SIM card company</label>
                                             <div class="col-12">
                                                 <label class="label-input100" for="irancellcompany">Irancell(MTN)</label>
-                                                <input id="irancellcompany" type="radio" name="company" required="required">
+                                                <input id="irancellcompany" type="radio" name="simcard_company" value="Irancell" required="required">
                                                 <label class="label-input100" for="mcicompany">IR-MCI</label>
-                                                <input id="mcicompany" type="radio" name="company" required="required">
+                                                <input id="mcicompany" type="radio" name="simcard_company" value="IR-MCI" required="required">
                                                 <label class="label-input100" for="rightelcompany">RighTel</label>
-                                                <input id="rightelcompany" type="radio" name="company" required="required">
+                                                <input id="rightelcompany" type="radio" name="simcard_company" value="RighTel" required="required">
                                             </div>
                                         </div>
                                     </div>
@@ -115,17 +115,17 @@
                     <div class="tab-content mt-4">
                         <div class="tab-pane container active" id="int-set-android-irancell">
                             <div class="img-setting">
-                                <img src="img/services/simcard-setting/Irancell/irancelll-android.jpg">
+                                <img src="<?= site_url('') ?>assets/img/services/simcard-setting/Irancell/irancelll-android.jpg">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="int-set-ios-irancell">
                             <div class="img-setting">
-                                <img src="img/services/simcard-setting/Irancell/irancell-ios.jpg">
+                                <img src="<?= site_url('') ?>assets/img/services/simcard-setting/Irancell/irancell-ios.jpg">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="int-set-windows-irancell">
                             <div class="img-setting">
-                                <img src="img/services/simcard-setting/Irancell/irancell-windows.jpg">
+                                <img src="<?= site_url('') ?>assets/img/services/simcard-setting/Irancell/irancell-windows.jpg">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="info-internet-irancell">
@@ -161,17 +161,17 @@
                     <div class="tab-content mt-4">
                         <div class="tab-pane container active" id="int-set-android-mci">
                             <div class="img-setting">
-                                <img src="img/services/simcard-setting/MCI/mci-android.jpeg">
+                                <img src="<?= site_url('') ?>assets/img/services/simcard-setting/MCI/mci-android.jpeg">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="int-set-ios-mci">
                             <div class="img-setting">
-                                <img src="img/services/simcard-setting/MCI/mci-ios.jpeg">
+                                <img src="<?= site_url('') ?>assets/img/services/simcard-setting/MCI/mci-ios.jpeg">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="int-set-windows-mci">
                             <div class="img-setting">
-                                <img src="img/services/simcard-setting/MCI/mci-windows.jpg">
+                                <img src="<?= site_url('') ?>assets/img/services/simcard-setting/MCI/mci-windows.jpg">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="info-internet-mci">
@@ -206,17 +206,17 @@
                     <div class="tab-content mt-4">
                         <div class="tab-pane container active" id="int-set-android-rightel">
                             <div class="img-setting">
-                                <img src="img/services/simcard-setting/RighTel/rightel-android.jpg">
+                                <img src="<?= site_url('') ?>assets/img/services/simcard-setting/RighTel/rightel-android.jpg">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="int-set-ios-rightel">
                             <div class="img-setting">
-                                <img src="img/services/simcard-setting/RighTel/rightel-ios.jpg">
+                                <img src="<?= site_url('') ?>assets/img/services/simcard-setting/RighTel/rightel-ios.jpg">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="int-set-windows-rightel">
                             <div class="img-setting">
-                                <img src="img/services/simcard-setting/RighTel/rightel-windows.jpg">
+                                <img src="<?= site_url('') ?>assets/img/services/simcard-setting/RighTel/rightel-windows.jpg">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="info-internet-rightel">
@@ -237,3 +237,4 @@
 <!--================ Start Banner Area =================-->
 <!--================ Start Banner Area =================-->
 <?php include_once (APPPATH.'views/_layout/site/foot.php'); ?>
+<?php include_once (APPPATH.'views/_layout/admin/swal.php'); ?>

@@ -13,6 +13,7 @@
     <link href="<?=base_url('')?>assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="<?=base_url('')?>assets/css/style.css">
+    
 
 
 
@@ -42,15 +43,15 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								   aria-expanded="false">Iran Guide</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="art-culture.html">Art and Culture</a></li>
-									<li class="nav-item"><a class="nav-link" href="clothing-guide.html">Clothing Guide</a></li>
-									<li class="nav-item"><a class="nav-link" href="persian-calendar.html">Persian Calendar</a></li>
-									<li class="nav-item"><a class="nav-link" href="public-holidays.html">Public Holidays</a></li>
-									<li class="nav-item"><a class="nav-link" href="iran-visa.html">Iran Visa</a></li>
-									<li class="nav-item"><a class="nav-link" href="transport.html">Transport</a></li>
-									<li class="nav-item"><a class="nav-link" href="exchange-currency.html">Exchange & Currency</a></li>
-									<li class="nav-item"><a class="nav-link" style="font-size: 0.85rem" href="reasons-visit.html">10 Reasons why you should visit</a></li>
-									<li class="nav-item"><a class="nav-link" href="four-seasons.html">Iran; The land of 4 seasons</a></li>
+									<li class="nav-item"><a class="nav-link" href="<?=base_url('site/Culture')?>">Art and Culture</a></li>
+									<li class="nav-item"><a class="nav-link" href="<?=base_url('site/Clothing')?>">Clothing Guide</a></li>
+									<li class="nav-item"><a class="nav-link" href="<?=base_url('site/Calendar')?>">Persian Calendar</a></li>
+									<li class="nav-item"><a class="nav-link" href="<?=base_url('site/Holidays')?>">Public Holidays</a></li>
+									<li class="nav-item"><a class="nav-link" href="<?=base_url('site/Visa')?>">Iran Visa</a></li>
+									<li class="nav-item"><a class="nav-link" href="<?=base_url('site/Transport')?>">Transport</a></li>
+									<li class="nav-item"><a class="nav-link" href="<?=base_url('site/Currency')?>">Exchange & Currency</a></li>
+									<li class="nav-item"><a class="nav-link" style="font-size: 0.85rem" href="<?=base_url('site/Reasons')?>">10 Reasons why you should visit</a></li>
+									<li class="nav-item"><a class="nav-link" href="<?=base_url('site/Seasons')?>">Iran; The land of 4 seasons</a></li>
 								</ul>
 							</li>
                         <li class="nav-item"><a data-scroll-nav="1" class="nav-link" href="<?=base_url('site/Index')?>">Cities</a></li>
@@ -58,11 +59,10 @@
                             <a data-scroll-nav="3" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                aria-expanded="false">Services</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="<?=base_url('site/Index')?>">Sim Card ( Irancell / MCI )</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?=base_url('site/Simcard')?>">Sim Card ( Irancell / MCI )</a></li>
                                 <li class="nav-item"><a class="nav-link" href="<?=base_url('site/Index')?>">Ticket(Plain / Train / Bus)</a></li>
-                                <li class="nav-item"><a class="nav-link" href="<?=base_url('site/Index')?>">Useful Application</a></li>
-                                <li class="nav-item"><a class="nav-link" href="<?=base_url('site/Index')?>">Maps</a></li>
-                                <li class="nav-item"><a class="nav-link" href="<?=base_url('site/Index')?>">Saffron</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?=base_url('site/Apps')?>">Useful Application</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?=base_url('site/Maps')?>">Maps</a></li>
                             </ul>
                         <li class="nav-item submenu dropdown">
                             <a href="#" data-scroll-nav="4" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
