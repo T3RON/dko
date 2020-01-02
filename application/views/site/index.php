@@ -203,12 +203,12 @@
 			</div>
 			<div class="flex-slide work">
 				<div class="flex-title">Useful Application</div>
-				<div class="flex-about"><p><a class="text-white" href="useful-application.html">Click here to download useful application for convenient your trip </a></p></div>
+				<div class="flex-about"><p><a class="text-white" href="<?= site_url('site/Apps') ?>">Click here to download useful application for convenient your trip </a></p></div>
 			</div>
 			<div class="flex-slide contact">
 				<div class="flex-title">Maps</div>
 				<div class="flex-about">
-					<p><a class="text-white" href="maps.html"> Click here to download map of Iran and each of the provinces of Iran </a></p>
+					<p><a class="text-white" href="<?= site_url('site/Maps') ?>"> Click here to download map of Iran and each of the provinces of Iran </a></p>
 				</div>
 			</div>
 		</div>
