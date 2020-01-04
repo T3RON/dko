@@ -96,7 +96,7 @@
 <script src="<?=base_url('')?>assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
 <script src="<?=base_url('')?>assets/plugins/dropify/dist/js/dropify.js"></script>
 <script src="<?=base_url('')?>assets/js/jquery.PrintArea.js" type="text/JavaScript"></script>
-
+<script src="<?=base_url('')?>assets/js/ajax.js" type="text/JavaScript"></script>
 <script>
     $(document).ready(function() {
         $("#print").click(function() {
@@ -177,7 +177,9 @@
         }
     });
 </script>
+<script>
 
+</script>
 </body>
 
 </html>

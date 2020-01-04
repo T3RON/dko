@@ -116,6 +116,36 @@
             </div>
         </div>
 
+        <input type="radio" name="tabs" id="Weather">
+        <label for="Weather">Weather</label>
+        <div class="tab">
+            <div class="map-direction">
+                <h3><?= $hostels_value->cities_title; ?></h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                          <?php 
+                          
+                          try {
+                            $url = 'https://api.weatherbit.io/v2.0/current?city='.$hostels_value->cities_title.'&key=2ba7175be1994237a93e3a59bdb85f5b';
+                            $JsonData[] = json_decode(file_get_contents($url),true);
+                
+                            $icon =  $JsonData[0]['data'][0]['weather']['icon'].".png";
+                            echo '<img src="'.base_url().'assets/img/weather/'.$icon.'" alt="wather">';
+                            
+                
+                        }catch (Exception $e) {
+                            //alert the user.
+                            var_dump($e->getMessage());
+                        }
+                          
+                          ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <input type="radio" name="tabs" id="book-now">
         <label for="book-now">Book Now</label>
         <div class="tab">

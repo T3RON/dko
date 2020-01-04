@@ -43,7 +43,8 @@ class Hostels extends CI_Controller {
 
     function hostels() {
         $id = $this->uri->segment('4');
-        $data[$this->tbl_name] = $this->Hostels_model->select_single($this->tbl_name,$id);
+        $data[$this->tbl_name] = $this->Hostels_model->show_join_one($this->tbl_name,'cities',$id);
+
         $data['gallery'] = $this->Hostels_model->select_single_where('gallery',$this->tbl_name,$id);
         $data['money'] = $this->Hostels_model->get_sum('reviews','reviews_money','hostels_id',$id);
         $data['security'] = $this->Hostels_model->get_sum('reviews','reviews_security','hostels_id',$id);
@@ -56,6 +57,9 @@ class Hostels extends CI_Controller {
         $data['get_all_rate'] = $this->Hostels_model->get_all_rate();
         $data['rev'] = $this->Hostels_model->select_limit_where('reviews','4','hostels_id',$id,'reviews_id','DESC');
         $data['morerview'] = $this->Hostels_model->select_offset('reviews','100','hostels_id',$id,'reviews_id','DESC');
+
+
+       
 
         $this->load->view('site/reservation',$data);
     }

@@ -11,6 +11,4 @@ class Simcard_model extends MY_Model  {
 
 
 
-
-
 }

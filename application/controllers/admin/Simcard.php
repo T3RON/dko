@@ -49,5 +49,22 @@ class Simcard extends MY_Controller {
         }
     }
 
+    function lock () {
+        $id = $this->uri->segment('4');
+        $state = $this->uri->segment('5');
+        if($state == 0 ) {
+            $data = array(
+                'simcard_state' => 1
+            );
+        }else {
+            $data = array(
+                'simcard_state' => 0
+            );
+        }
+       
+        $result = $this->Simcard_model->update($this->tbl_name,$id,$data);
+        redirect('admin/Simcard');        
+    }
+
 
 }
